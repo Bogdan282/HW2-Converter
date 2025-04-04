@@ -8,9 +8,12 @@ public class Main {
         int km = 15;
         int mills = 20;
 
-        System.out.println(mills + " миль це " + convertMillsToKm(mills) + " кілометрів.");
+        System.out.println(km + " кілометрів це " + convertKmToMills(km) + ". А " + mills + " миль в кілометрах, це " + convertMillsToKm(mills) + ".");
     }
-    public static double convertMillsToKm(int mills) {
-        return mills * 1.60934;
+    public static double convertKmToMills(int km) {
+        return km * 0.621371;
+    }
+    public static double convertMillsToKm(int Mills) {
+        return Mills * 1.60934;
     }
 }
